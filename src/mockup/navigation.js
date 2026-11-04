@@ -35,6 +35,13 @@ export const contactDetails = {
   operatingHours: '24/7 UK Dispatch'
 }
 
+export const socialLinks = [
+  { id: 'facebook', label: 'Facebook', path: 'https://facebook.com' },
+  { id: 'twitter', label: 'Twitter', path: 'https://x.com' },
+  { id: 'instagram', label: 'Instagram', path: 'https://instagram.com' },
+  { id: 'linkedin', label: 'LinkedIn', path: 'https://linkedin.com' }
+]
+
 export const footerServices = [
   { label: 'Private Hire', path: '/services' },
   { label: 'Airport Transfers', path: '/airports' },
@@ -56,4 +63,3 @@ export const footerLegalLinks = [
   { label: 'Terms & Conditions', path: '/terms' },
   { label: 'Accessibility', path: '/accessibility' }
 ]
-
