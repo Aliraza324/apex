@@ -18,7 +18,5 @@ export const airportSectionData = {
     { name: 'Luton Airport', code: 'LTN', path: '/airports/ltn' },
     { name: 'Manchester Airport', code: 'MAN', path: '/airports/man' },
     { name: 'Birmingham Airport', code: 'BHX', path: '/airports/bhx' }
-  ],
-  towerImage: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1000&q=80'
+  ]
 }
-

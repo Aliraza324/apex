@@ -6,7 +6,7 @@ import {
   AnimatedUser,
   AnimatedChart
 } from '../../icons'
-
+import boyImage from "../../assets/boy.jpg"
 export const CorporateSection = () => {
   const [hoveredFeature, setHoveredFeature] = useState(null)
 
@@ -63,7 +63,7 @@ export const CorporateSection = () => {
           <div className="lg:col-span-5">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-200 group">
               <img
-                src={corporateData.executiveImage}
+                src={boyImage}
                 alt="Executive business travel"
                 className="w-full h-[440px] object-cover group-hover:scale-105 transition-transform duration-700"
               />
