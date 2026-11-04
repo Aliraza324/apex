@@ -63,3 +63,4 @@ export const Preloader = ({ onComplete }) => {
     </div>
   )
 }
+
