@@ -3,24 +3,24 @@ import { Link } from 'react-router-dom'
 import { heroContent } from '../../mockup/hero'
 import { HeroBadges } from './HeroBadges'
 import { AnimatedArrow } from '../../icons'
-import heroImg from '../../assets/hero-backdrop.jpeg'
+import heroImg from '../../assets/hero-backdrop.jpg'
 
 export const Hero = () => {
   const [hoveredCta, setHoveredCta] = useState(false)
 
   return (
-    <section className="relative min-h-[640px] lg:min-h-[720px] flex items-center justify-start bg-slate-950 overflow-hidden pb-32 sm:pb-44 lg:pb-52">
+    <section className="relative min-h-[660px] lg:min-h-[740px] flex items-center justify-start bg-slate-950 overflow-hidden pb-32 sm:pb-44 lg:pb-52">
       <div className="absolute inset-0 z-0">
         <img
           src={heroImg}
           alt="Luxury airport transfer backdrop"
-          className="w-full h-full object-cover object-right lg:object-center  "
+          className="w-full h-full object-cover object-right lg:object-center opacity-50 brightness-90 scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-slate-950/85 to-transparent" />
-        {/* <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent" /> */}
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 lg:pt-36 pb-12 w-full">
         <div className="max-w-2xl space-y-6">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold uppercase tracking-wider text-gray-300">
             <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />

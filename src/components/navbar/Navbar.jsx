@@ -9,8 +9,8 @@ export const Navbar = () => {
   const [hoveredPhone, setHoveredPhone] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-slate-950/90 backdrop-blur-md border-b border-white/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <header className="absolute top-0 left-0 right-0 z-50 w-full bg-transparent">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
           <img
             src={logoImg}
@@ -40,7 +40,7 @@ export const Navbar = () => {
 
               {item.dropdown && (
                 <div className="absolute left-0 top-full pt-2 opacity-0 translate-y-1 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-200">
-                  <div className="w-56 bg-slate-900 border border-white/10 rounded-xl shadow-2xl py-2 px-1">
+                  <div className="w-56 bg-slate-900/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl py-2 px-1">
                     {item.dropdown.map((subItem) => (
                       <Link
                         key={subItem.label}
@@ -94,7 +94,7 @@ export const Navbar = () => {
       </div>
 
       {mobileMenuOpen && (
-        <div className="md:hidden bg-slate-950 border-b border-white/10 px-4 pt-3 pb-6 space-y-3">
+        <div className="md:hidden bg-slate-950/95 backdrop-blur-lg border-b border-white/10 px-4 pt-3 pb-6 space-y-3">
           {navLinks.map((item) => (
             <Link
               key={item.label}
@@ -125,4 +125,3 @@ export const Navbar = () => {
     </header>
   )
 }
-
