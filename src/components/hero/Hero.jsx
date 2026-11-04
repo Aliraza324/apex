@@ -8,18 +8,18 @@ export const Hero = () => {
   const [hoveredCta, setHoveredCta] = useState(false)
 
   return (
-    <section className="relative min-h-[580px] lg:min-h-[660px] flex items-center justify-start bg-slate-950 overflow-hidden">
+    <section className="relative min-h-[640px] lg:min-h-[720px] flex items-center justify-start bg-slate-950 overflow-hidden pb-32 sm:pb-44 lg:pb-52">
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1920&q=85"
           alt="Luxury airport transfer backdrop"
-          className="w-full h-full object-cover object-center opacity-40 brightness-75 scale-105"
+          className="w-full h-full object-cover object-right lg:object-center opacity-45 brightness-90 scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 w-full">
         <div className="max-w-2xl space-y-6">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold uppercase tracking-wider text-gray-300">
             <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
@@ -64,4 +64,3 @@ export const Hero = () => {
     </section>
   )
 }
-

@@ -21,7 +21,7 @@ export const FeaturesStrip = () => {
   }
 
   return (
-    <section className="py-12 bg-white border-b border-gray-100">
+    <section className="pt-20 sm:pt-28 pb-14 bg-white border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-6 sm:gap-8">
           {featureStripItems.map((item) => {
@@ -47,4 +47,3 @@ export const FeaturesStrip = () => {
     </section>
   )
 }
-
