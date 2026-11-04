@@ -30,7 +30,7 @@ export const ServiceCard = ({ service }) => {
         <div className="space-y-2">
           <div className="flex items-center gap-2.5">
             {renderIcon(service.iconName)}
-            <h3 className="text-sm sm:text-base font-bold text-gray-900 group-hover:text-red-600 transition-colors whitespace-nowrap">
+            <h3 className="text-sm sm:text-base font-bold text-gray-900 group-hover:text-red-600 transition-colors sm:whitespace-nowrap">
               {service.title}
             </h3>
           </div>

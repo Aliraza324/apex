@@ -4,6 +4,8 @@
   --font-sans: 'Poppins', sans-serif;
 }
 
-body {
+html, body {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  max-width: 100vw;
 }

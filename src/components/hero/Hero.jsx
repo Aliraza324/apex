@@ -27,7 +27,7 @@ export const Hero = () => {
             {heroContent.badge}
           </div>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15]">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15] break-words">
             {heroContent.titlePrefix}{' '}
             <br />
             {heroContent.titleMid}{' '}
@@ -36,7 +36,7 @@ export const Hero = () => {
             </span>
           </h1>
 
-          <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-xl">
+          <p className="text-sm sm:text-lg text-gray-300 leading-relaxed max-w-xl">
             {heroContent.description}
           </p>
 

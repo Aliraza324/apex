@@ -21,26 +21,26 @@ export const BookingWidget = () => {
 
   return (
     <div id="book" className="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-24 sm:-mt-36 lg:-mt-44">
-      <div className="relative bg-white rounded-3xl shadow-[0_25px_70px_-15px_rgba(0,0,0,0.35)] border border-gray-100 pt-12 sm:pt-14 p-6 sm:p-8 lg:p-10 space-y-6">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 w-max max-w-[95%]">
-          <div className="flex items-center p-1.5 bg-white rounded-2xl border border-gray-200/90 shadow-xl">
+      <div className="relative bg-white rounded-3xl shadow-[0_25px_70px_-15px_rgba(0,0,0,0.35)] border border-gray-100 pt-12 sm:pt-14 p-5 sm:p-8 lg:p-10 space-y-6">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 w-max max-w-[calc(100%-1.5rem)]">
+          <div className="flex items-center p-1 sm:p-1.5 bg-white rounded-2xl border border-gray-200/90 shadow-xl overflow-x-auto max-w-full">
             <button
               type="button"
               onClick={() => setActiveTab('book')}
-              className={`flex items-center gap-2.5 px-5 sm:px-7 py-3 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+              className={`flex items-center gap-1.5 sm:gap-2.5 px-3.5 sm:px-7 py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer shrink-0 ${
                 activeTab === 'book'
                   ? 'bg-gradient-to-r from-red-600 to-red-500 text-white shadow-md shadow-red-600/30'
                   : 'text-gray-700 hover:text-gray-900 hover:bg-gray-100'
               }`}
             >
-              <AnimatedCar isParentHovered={activeTab === 'book'} size={18} />
+              <AnimatedCar isParentHovered={activeTab === 'book'} size={16} />
               <span>Book a Ride</span>
             </button>
 
             <button
               type="button"
               onClick={() => setActiveTab('quote')}
-              className={`flex items-center gap-2.5 px-5 sm:px-7 py-3 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+              className={`flex items-center gap-1.5 sm:gap-2.5 px-3.5 sm:px-7 py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer shrink-0 ${
                 activeTab === 'quote'
                   ? 'bg-gradient-to-r from-red-600 to-red-500 text-white shadow-md shadow-red-600/30'
                   : 'text-gray-700 hover:text-gray-900 hover:bg-gray-100'
@@ -58,7 +58,7 @@ export const BookingWidget = () => {
             <button
               type="button"
               onClick={() => setActiveTab('manage')}
-              className={`flex items-center gap-2.5 px-5 sm:px-7 py-3 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+              className={`flex items-center gap-1.5 sm:gap-2.5 px-3.5 sm:px-7 py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer shrink-0 ${
                 activeTab === 'manage'
                   ? 'bg-gradient-to-r from-red-600 to-red-500 text-white shadow-md shadow-red-600/30'
                   : 'text-gray-700 hover:text-gray-900 hover:bg-gray-100'

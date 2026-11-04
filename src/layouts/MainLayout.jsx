@@ -8,10 +8,10 @@ export const MainLayout = () => {
   const [loading, setLoading] = useState(true)
 
   return (
-    <div className="min-h-screen flex flex-col bg-white text-gray-900 font-sans antialiased selection:bg-red-600 selection:text-white">
+    <div className="min-h-screen flex flex-col bg-white text-gray-900 font-sans antialiased selection:bg-red-600 selection:text-white overflow-x-hidden w-full max-w-full">
       {loading && <Preloader onComplete={() => setLoading(false)} />}
       <Navbar />
-      <main className="flex-1">
+      <main className="flex-1 w-full overflow-x-hidden">
         <Outlet />
       </main>
       <Footer />

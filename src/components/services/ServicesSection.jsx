@@ -8,7 +8,7 @@ export const ServicesSection = () => {
   const [hoveredHeaderLink, setHoveredHeaderLink] = useState(false)
 
   return (
-    <section id="services" className="py-16 sm:py-20 bg-white">
+    <section id="services" className="py-16 sm:py-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-[#0B0F17] rounded-3xl p-6 sm:p-10 lg:p-12 border border-white/10 shadow-2xl space-y-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-2">
@@ -16,7 +16,7 @@ export const ServicesSection = () => {
               <span className="text-xs font-bold tracking-widest text-red-600 uppercase block">
                 {servicesHeader.badge}
               </span>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight whitespace-nowrap">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight xl:whitespace-nowrap">
                 {servicesHeader.title}
               </h2>
               <p className="text-xs sm:text-sm text-gray-400 leading-relaxed max-w-xl">
