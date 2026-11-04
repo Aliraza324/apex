@@ -1,3 +1,8 @@
+import standardImg from '../assets/fleet-standard.jpg'
+import executiveImg from '../assets/fleet-executive.jpg'
+import xlImg from '../assets/fleet-xl.jpg'
+import accessibleImg from '../assets/fleet-accessible.jpg'
+
 export const fleetHeader = {
   badge: 'OUR FLEET',
   title: 'Maintained to Impeccable Standards',
@@ -8,7 +13,7 @@ export const fleetVehicles = [
   {
     id: 'standard-saloon',
     name: 'Standard Saloon',
-    image: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80',
+    image: standardImg,
     passengers: 'Up to 4',
     luggage: '2 Cases',
     description: 'A comfortable and cost-effective choice for everyday travel, airport transfers, and local journeys.',
@@ -18,7 +23,7 @@ export const fleetVehicles = [
   {
     id: 'executive-saloon',
     name: 'Executive Saloon',
-    image: 'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80',
+    image: executiveImg,
     passengers: 'Up to 4',
     luggage: '2 Cases',
     description: 'A premium saloon with extra comfort and style, ideal for business travel and important meetings.',
@@ -28,7 +33,7 @@ export const fleetVehicles = [
   {
     id: 'xl-mpv-group',
     name: 'XL / MPV Group',
-    image: 'https://images.unsplash.com/photo-1559297434-fae8a1916a79?auto=format&fit=crop&w=800&q=80',
+    image: xlImg,
     passengers: 'Up to 7',
     luggage: '4 Cases',
     description: 'Perfect for families, groups, or additional luggage, with spacious and comfortable seating.',
@@ -38,7 +43,7 @@ export const fleetVehicles = [
   {
     id: 'accessible-wheelchair',
     name: 'Accessible (Wheelchair)',
-    image: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=800&q=80',
+    image: accessibleImg,
     passengers: 'Up to 4',
     luggage: '2 Cases',
     description: 'Fully accessible vehicles with wheelchair access, ensuring a safe and comfortable journey for all passengers.',
@@ -46,4 +51,3 @@ export const fleetVehicles = [
     link: '/#book'
   }
 ]
-
